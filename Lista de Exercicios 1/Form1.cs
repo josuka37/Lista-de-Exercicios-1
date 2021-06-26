@@ -22,5 +22,35 @@ namespace Lista_de_Exercicios_1
             var exercico1 = new Form2();
             exercico1.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var exercicio2 = new Form3();
+            exercicio2.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var exercicio3 = new Form4();
+            exercicio3.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var lista2Exerc_4 = new Form5();
+            lista2Exerc_4.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var lista2Exerc_5 = new Form6();
+            lista2Exerc_5.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var lista2Exerc_6 = new Form7();
+            lista2Exerc_6.Show();
+        }
     }
 }

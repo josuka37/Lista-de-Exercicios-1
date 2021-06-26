@@ -10,7 +10,7 @@ namespace Lista_de_Exercicios_1
 {
     public partial class Form2 : Form
     {
-        int calculaMedia, estoqueMinimo, estoqueMaximo;
+        int estoqueMinimo, estoqueMaximo;
         public Form2()
         {
             InitializeComponent();
