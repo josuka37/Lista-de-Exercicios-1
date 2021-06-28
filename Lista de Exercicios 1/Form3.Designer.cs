@@ -32,8 +32,9 @@ namespace Lista_de_Exercicios_1
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -64,32 +65,40 @@ namespace Lista_de_Exercicios_1
             this.label2.TabIndex = 4;
             this.label2.Text = "Informe valor em Dólares para ser convertido";
             // 
-            // maskedTextBox1
+            // textBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(358, 138);
-            this.maskedTextBox1.Mask = "$00000,00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.Leave += new System.EventHandler(this.Real_Leave);
+            this.textBox1.Location = new System.Drawing.Point(358, 133);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Leave += new System.EventHandler(this.real_Leave1);
             // 
-            // maskedTextBox2
+            // textBox2
             // 
-            this.maskedTextBox2.Culture = new System.Globalization.CultureInfo("en-US");
-            this.maskedTextBox2.Location = new System.Drawing.Point(358, 186);
-            this.maskedTextBox2.Mask = "$000000,00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.maskedTextBox2.TabIndex = 1;
-            this.maskedTextBox2.Leave += new System.EventHandler(this.dolar_Leave);
+            this.textBox2.Location = new System.Drawing.Point(358, 186);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.Leave += new System.EventHandler(this.cotacaoDolar_Leave);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(703, 405);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Voltar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -104,7 +113,8 @@ namespace Lista_de_Exercicios_1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
     }
 }

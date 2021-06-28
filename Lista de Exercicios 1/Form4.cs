@@ -34,7 +34,7 @@ namespace Lista_de_Exercicios_1
 
         private void precoUnit_Leave(object sender, EventArgs e)
         {
-            precoUnit = double.Parse(textBox3.Text);
+            precoUnit = string.IsNullOrEmpty(textBox3.Text) ? 0 : double.Parse(textBox3.Text);
         }
 
         private void qtdVendida_Leave(object sender, EventArgs e)
@@ -45,6 +45,13 @@ namespace Lista_de_Exercicios_1
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var menuPrincipal = new Form1();
+            menuPrincipal.Show();
+            this.Hide();
         }
 
         private void CodPeca_Leave(object sender, EventArgs e)

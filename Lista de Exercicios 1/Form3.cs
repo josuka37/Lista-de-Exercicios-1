@@ -21,24 +21,21 @@ namespace Lista_de_Exercicios_1
             MessageBox.Show($"O valor em dólares é U${cambio * cotacaoDolar}");
         }
 
-
-
-        private void Real_Leave(object sender, EventArgs e)
+        private void real_Leave1(object sender, EventArgs e)
         {
-             maskedTextBox1.Text.Replace("R$", "");
-            cotacaoDolar = string.IsNullOrEmpty(maskedTextBox1.Text) ? 0 : double.Parse(maskedTextBox1.Text);
-            // maskedTextBox1.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-           // cotacaoDolar = string.IsNullOrEmpty(maskedTextBox1.Text) ? 0 : (double.Parse(maskedTextBox1.Text);
-           // maskedTextBox1.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
+            cotacaoDolar = string.IsNullOrEmpty(textBox1.Text) ? 0 : double.Parse(textBox1.Text);
         }
 
-        private void dolar_Leave(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            maskedTextBox1.Text.Replace("$", "");
-            cambio = String.IsNullOrEmpty(maskedTextBox2.Text) ? 0 : double.Parse(maskedTextBox2.Text);
-            //maskedTextBox2.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-            //cambio = String.IsNullOrEmpty(maskedTextBox2.Text) ? 0 : double.Parse(maskedTextBox2.Text);
-            //maskedTextBox2.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
+            var menuPrincipal = new Form1();
+            menuPrincipal.Show();
+            this.Hide();
+        }
+
+        private void cotacaoDolar_Leave(object sender, EventArgs e)
+        {
+            cambio = string.IsNullOrEmpty(textBox2.Text) ? 0 : double.Parse(textBox2.Text);
         }
 
     }

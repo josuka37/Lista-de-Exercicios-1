@@ -18,14 +18,22 @@ namespace Lista_de_Exercicios_1
 
         private void txtBox_Leave2(object sender, EventArgs e)
         {
-            estoqueMaximo = int.Parse(textBox2.Text);
+            estoqueMaximo =string.IsNullOrEmpty(textBox2.Text) ? 0 : int.Parse(textBox2.Text);
         }
 
 
         private void txtBox_Leave1(object sender, EventArgs e)
         {
-            estoqueMinimo = int.Parse(textBox1.Text);
+            estoqueMinimo = string.IsNullOrEmpty(textBox1.Text) ? 0 : int.Parse(textBox1.Text);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var menuPrincipal = new Form1();
+            menuPrincipal.Show();
+            this.Hide();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"O Estoque médio é {(estoqueMinimo + estoqueMaximo) / 2}");

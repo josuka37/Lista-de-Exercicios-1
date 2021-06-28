@@ -21,18 +21,21 @@ namespace Lista_de_Exercicios_1
         {
             var exercico1 = new Form2();
             exercico1.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             var exercicio2 = new Form3();
             exercicio2.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             var exercicio3 = new Form4();
             exercicio3.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
